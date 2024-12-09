@@ -86,6 +86,7 @@ src/
 |-- main/
 |   |-- java/
 |   |   |-- com.example.documentCounter/
+|   |       |-- config/        # configuração do Swagger
 |   |       |-- controller/    # Controladores REST
 |   |       |-- model/         # Modelos de dados
 |   |       |-- service/       # Regras de negócio
