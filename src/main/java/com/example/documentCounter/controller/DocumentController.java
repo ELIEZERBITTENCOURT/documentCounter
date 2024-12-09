@@ -16,7 +16,7 @@ public class DocumentController {
 
     @PostMapping("/upload")
     public ResponseEntity<DocumentInfo> uploadFile(@RequestParam("file") MultipartFile file) {
-        // System.out.println("Arquivo recebido: " + file.getOriginalFilename()); =>
+        // System.out.println("Arquivo recebido: " + file.getOriginalFilename()); => log para verificar se o parâmetro está chegando ao servidor.
         try {
             DocumentInfo documentInfo = documentService.processDocument(file);
             return ResponseEntity.ok(documentInfo);
